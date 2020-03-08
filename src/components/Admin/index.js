@@ -50,17 +50,23 @@ class AdminPage extends Component {
 const UserList = ({ users }) => (
   <ul>
     {users.map(user => (
-      <li key={user.uid}>
-        <span>
-          <strong>ID:</strong> {user.uid}
-        </span>
-        <span>
-          <strong>E-mail:</strong> {user.email}
-        </span>
-        <span>
-          <strong>Username:</strong> {user.username}
-        </span>
-      </li>
+      <div>
+        <li key={user.uid}>
+          <span>
+            <strong>ID:</strong> {user.uid}
+          </span>
+        </li>
+        <li>
+          <span>
+            <strong>E-mail:</strong> {user.email}
+          </span>
+        </li>
+        <li>
+          <span>
+            <strong>Username:</strong> {user.username}
+          </span>
+        </li>
+      </div>
     ))}
   </ul>
 );
